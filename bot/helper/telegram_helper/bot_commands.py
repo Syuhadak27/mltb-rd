@@ -5,12 +5,12 @@ class _BotCommands:
     def __init__(self):
         self.StartCommand = f"start"
         self.MirrorCommand = [f"mirror{x}", f"m{x}"]
-        self.QbMirrorCommand = [f"qbmirror{x}", f"qbm{x}"]
+        self.QbMirrorCommand = [f"qbmirror{x}", f"qm{x}"]
         self.JdMirrorCommand = [f"jdmirror{x}", f"jdm{x}"]
         self.YtdlCommand = [f"ytdl{x}", f"y{x}"]
         self.NzbMirrorCommand = [f"nzbmirror{x}", f"nzm{x}"]
         self.LeechCommand = [f"leech{x}", f"l{x}"]
-        self.QbLeechCommand = [f"qbleech{x}", f"qbl{x}"]
+        self.QbLeechCommand = [f"qbleech{x}", f"ql{x}"]
         self.JdLeechCommand = [f"jdleech{x}", f"jdl{x}"]
         self.YtdlLeechCommand = [f"ytdlleech{x}", f"yl{x}"]
         self.NzbLeechCommand = [f"nzbleech{x}", f"nzl{x}"]
@@ -23,16 +23,15 @@ class _BotCommands:
         self.ForceStartCommand = [f"forcestart{x}", f"fs{x}"]
         self.ListCommand = f"list{x}"
         self.SearchCommand = f"search{x}"
-        self.StatusCommand = f"status{x}"
+        self.StatusCommand = [f"status{x}", f"s{x}"]
         self.UsersCommand = f"users{x}"
-        self.AuthorizeCommand = f"authorize{x}"
-        self.UnAuthorizeCommand = f"unauthorize{x}"
+        self.AuthorizeCommand = [f"authorize{x}", f"a{x}"]
+        self.UnAuthorizeCommand = [f"unauthorize{x}", f"ua{x}"]
         self.AddSudoCommand = f"addsudo{x}"
         self.RmSudoCommand = f"rmsudo{x}"
-        #self.PingCommand = f"ping{x}"
-        self.PingCommand = [f"ping", f"p"]
-        self.RestartCommand = f"restart{x}"
-        self.StatsCommand = f"stats{x}"
+        self.PingCommand = f"ping{x}"
+        self.RestartCommand = [f"restart{x}", f"r{r}"]
+        self.StatsCommand = [f"stats{x}", f"st{x}"]
         self.HelpCommand = f"help{x}"
         self.LogCommand = f"log{x}"
         self.ShellCommand = f"shell{x}"
