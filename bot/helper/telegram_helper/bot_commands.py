@@ -7,12 +7,12 @@ class _BotCommands:
         self.MirrorCommand = [f"mirror{x}", f"m{x}"]
         self.QbMirrorCommand = [f"qbmirror{x}", f"qbm{x}"]
         self.JdMirrorCommand = [f"jdmirror{x}", f"jdm{x}"]
-        self.YtdlCommand = [f"ytdl{x}", f"ytm{x}"]
+        self.YtdlCommand = [f"ytdl{x}", f"y{x}"]
         self.NzbMirrorCommand = [f"nzbmirror{x}", f"nzm{x}"]
         self.LeechCommand = [f"leech{x}", f"l{x}"]
         self.QbLeechCommand = [f"qbleech{x}", f"qbl{x}"]
         self.JdLeechCommand = [f"jdleech{x}", f"jdl{x}"]
-        self.YtdlLeechCommand = [f"ytdlleech{x}", f"ytl{x}"]
+        self.YtdlLeechCommand = [f"ytdlleech{x}", f"yl{x}"]
         self.NzbLeechCommand = [f"nzbleech{x}", f"nzl{x}"]
         self.CloneCommand = f"clone{x}"
         self.CountCommand = f"count{x}"
@@ -29,7 +29,8 @@ class _BotCommands:
         self.UnAuthorizeCommand = f"unauthorize{x}"
         self.AddSudoCommand = f"addsudo{x}"
         self.RmSudoCommand = f"rmsudo{x}"
-        self.PingCommand = f"ping{x}"
+        #self.PingCommand = f"ping{x}"
+        self.PingCommand = [f"ping", f"p"]
         self.RestartCommand = f"restart{x}"
         self.StatsCommand = f"stats{x}"
         self.HelpCommand = f"help{x}"
