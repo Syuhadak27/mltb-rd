@@ -137,8 +137,8 @@ def get_progress_bar_string(pct):
     pct = float(pct.strip("%"))
     p = min(max(pct, 0), 100)
     cFull = int(p // 8)
-    p_str = "█" * cFull
-    p_str += "░️" * (12 - cFull)
+    p_str = "●" * cFull
+    p_str += "◌" * (12 - cFull)
     return f"{p_str}"
 
 async def get_readable_message(sid, is_user, page_no=1, status="All", page_step=1):
@@ -212,7 +212,7 @@ async def get_readable_message(sid, is_user, page_no=1, status="All", page_step=
             msg += (
                 f"\n<code>Size   :</code> {task.size()}"
             )
-        msg += f"\n<blockquote>{cancel_task}</blockquote>\n\n"
+        msg += f"\n{cancel_task}\n\n"
 
     if len(msg) == 0:
         if status == "All":
