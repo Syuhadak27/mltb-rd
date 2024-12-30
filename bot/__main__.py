@@ -247,7 +247,7 @@ async def restart_notification():
             "git log -1 --date=short --pretty=format:'%cd <b>From</b> %cr'", True
         )
         last_commit = last_commit[0]
-    elif not await:
+    elif not await aiopath.exists(".git"):
         last_commit = "No UPSTREAM_REPO"
     else:
         chat_id, msg_id = 0, 0
