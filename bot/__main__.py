@@ -272,9 +272,9 @@ async def restart_notification():
     if config_dict["INCOMPLETE_TASK_NOTIFIER"] and config_dict["DATABASE_URL"]:
         if notifier_dict := await database.get_incomplete_tasks():
             for cid, data in notifier_dict.items():
-              if cid == chat_id 
-                msg = "Restarting Done..\n\nCommit Date:</b> {last_commit} " 
-              else: 
+             if cid == chat_id 
+                 msg = "Restarting Done..\n\nCommit Date:</b> {last_commit} " 
+             else: 
                  msg = "Bot Restarted!"
                 for tag, links in data.items():
                     msg += f"\n\n{tag}: "
