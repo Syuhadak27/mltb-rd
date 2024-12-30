@@ -21,7 +21,7 @@ pillow
 psutil
 pycryptodome
 pymongo
-pyrofork
+pyrofork==2.2.11
 python-dotenv
 python-magic
 qbittorrent-api
@@ -32,5 +32,5 @@ tgcrypto
 urllib3
 uvloop
 xattr
-yt-dlp
+yt-dlp==2024.12.13
 speedtest-cli
