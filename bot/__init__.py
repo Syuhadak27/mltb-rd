@@ -234,7 +234,7 @@ if DEFAULT_UPLOAD != "rc":
     DEFAULT_UPLOAD = "gd"
 
 DISABLE_DRIVE_LINK = environ.get('DISABLE_DRIVE_LINK', '')
-DISABLE_DRIVE_LINK = DISABLE_DRIVE_LINK.lower() == 'true'
+DISABLE_DRIVE_LINK = DISABLE_DRIVE_LINK.lower() == 'false'
 
 DOWNLOAD_DIR = environ.get("DOWNLOAD_DIR", "")
 if len(DOWNLOAD_DIR) == 0:
@@ -360,7 +360,7 @@ RSS_DELAY = 600 if len(RSS_DELAY) == 0 else int(RSS_DELAY)
 TORRENT_TIMEOUT = environ.get("TORRENT_TIMEOUT", "")
 TORRENT_TIMEOUT = "" if len(TORRENT_TIMEOUT) == 0 else int(TORRENT_TIMEOUT)
 
-QUEUE_ALL = environ.get("QUEUE_ALL", "")
+QUEUE_ALL = environ.get("QUEUE_ALL", 4)
 QUEUE_ALL = "" if len(QUEUE_ALL) == 0 else int(QUEUE_ALL)
 
 QUEUE_DOWNLOAD = environ.get("QUEUE_DOWNLOAD", "")
@@ -384,13 +384,13 @@ USE_SERVICE_ACCOUNTS = USE_SERVICE_ACCOUNTS.lower() == "true"
 WEB_PINCODE = environ.get("WEB_PINCODE", "")
 WEB_PINCODE = WEB_PINCODE.lower() == "true"
 
-AS_DOCUMENT = environ.get("AS_DOCUMENT", "")
-AS_DOCUMENT = AS_DOCUMENT.lower() == "true"
+AS_DOCUMENT = environ.get("AS_DOCUMENT", "false")
+AS_DOCUMENT = AS_DOCUMENT.lower() == "false"
 
 EQUAL_SPLITS = environ.get("EQUAL_SPLITS", "")
 EQUAL_SPLITS = EQUAL_SPLITS.lower() == "true"
 
-MEDIA_GROUP = environ.get("MEDIA_GROUP", "")
+MEDIA_GROUP = environ.get("MEDIA_GROUP", "true")
 MEDIA_GROUP = MEDIA_GROUP.lower() == "true"
 
 COVER_IMAGES = environ.get('COVER_IMAGES', '')
