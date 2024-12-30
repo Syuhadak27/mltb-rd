@@ -242,6 +242,13 @@ async def restart_notification():
     if await aiopath.isfile(".restartmsg"):
         with open(".restartmsg") as f:
             chat_id, msg_id = map(int, f)
+    elif await aiopath.exists(".git"):
+        last_commit = await cmd_exec(
+            "git log -1 --date=short --pretty=format:'%cd <b>From</b> %cr'", True
+        )
+        last_commit = last_commit[0]
+    elif not await:
+        last_commit = "No UPSTREAM_REPO"
     else:
         chat_id, msg_id = 0, 0
 
@@ -265,7 +272,10 @@ async def restart_notification():
     if config_dict["INCOMPLETE_TASK_NOTIFIER"] and config_dict["DATABASE_URL"]:
         if notifier_dict := await database.get_incomplete_tasks():
             for cid, data in notifier_dict.items():
-                msg = "Restarting Done.." if cid == chat_id else "Bot Restarted!"
+              if cid == chat_id 
+                msg = "Restarting Done..\n\nCommit Date:</b> {last_commit} " 
+              else: 
+                 msg = "Bot Restarted!"
                 for tag, links in data.items():
                     msg += f"\n\n{tag}: "
                     for index, link in enumerate(links, start=1):
