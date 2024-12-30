@@ -106,7 +106,7 @@ def get_readable_file_size(size_in_bytes):
     return f"{size_in_bytes:.2f}{SIZE_UNITS[index]}"
 
 def get_readable_time(seconds: int):
-    periods = [(" hari", 86400), (" jam", 3600), (" menit", 60), (" detik", 1)]
+    periods = [("hari ", 86400), ("jam ", 3600), ("menit ", 60), ("detik ", 1)]
     result = ""
     for period_name, period_seconds in periods:
         if seconds >= period_seconds:
