@@ -165,7 +165,7 @@ async def get_readable_message(sid, is_user, page_no=1, status="All", page_step=
         user_tag = task.listener.tag.replace("@", "").replace("_", " ")
         cancel_task = (f"<b>/{BotCommands.CancelTaskCommand}_{task.gid()}</b>")
         if config_dict['SAFE_MODE']:
-          msg += f"<b>{tstatus}: {task.safemode_msg}..</b>"
+          msg += f"<b>{tstatus}</b>\n <i>{task.safemode_msg}..</i>"
         else:
           msg = (
             f"<pre><a href='{task.listener.message.link}'>{tstatus}</a>: "
