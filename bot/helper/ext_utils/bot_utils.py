@@ -192,16 +192,16 @@ async def set_commands(client):
 
 def safemode_message():
     messages = [
-        "The future feels so uncertain. Will I find my way?",
-        "What if my dreams fade away as life changes?",
-        "Sometimes, expectations feel too heavy. Will I know what I want?",
-        "I'm scared of making the wrong choices for my future.",
-        "Will I ever find true happiness, or will I always be searching?",
-        "The pressure to succeed is real. What if I fall short?",
-        "I worry that I’ll get stuck in a routine and miss out on life.",
-        "What if I choose a path and realize it's not for me?",
-        "Can I really trust myself to make the right decisions?",
-        "The future seems so far away, yet it feels like it’s closing in."
+        "Hidup adalah perjalanan penuh pertanyaan; jawabannya datang dengan keberanian.",
+        "Setiap tantangan adalah pelajaran; setiap kesalahan adalah langkah maju.",
+        "Mimpi mungkin goyah, tapi harapan menjaganya tetap hidup.",
+        "Beban keraguan itu berat, tapi keyakinan bisa mengangkatnya.",
+        "Kebahagiaan bukan tujuan; itu adalah jalan yang kita pilih untuk dilalui.",
+        "Kesuksesan bukan akhir, dan kegagalan bukan kehancuran; teruslah melangkah.",
+        "Rutinitas itu nyaman, tapi pertumbuhan ada di luar zona nyaman.",
+        "Memilih jalan itu sulit, tapi diam di tempat lebih sulit.",
+        "Mempercayai diri sendiri adalah langkah pertama untuk menemukan kekuatanmu.",
+        "Masa depan terbentuk dari satu keputusan setiap saat; buatlah itu berarti."
     ]
     return choice(messages)
 
